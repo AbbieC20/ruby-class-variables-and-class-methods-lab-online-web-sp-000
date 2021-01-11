@@ -38,4 +38,15 @@ class Song
     return genre_count
   end
 
+  def self.artist_count
+    artist_count = {}
+    @@artists.each do |artist_name|
+      if artist_count.key?(artist_name) == true
+        artist_count[artist_name] += 1
+      else
+        artist_count[artist_name] = 1
+      end
+    end
+    return artist_count
+  end
 end
