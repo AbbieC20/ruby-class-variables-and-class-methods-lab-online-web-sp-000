@@ -32,9 +32,10 @@ class Song
       if genre_count.key?(genre_name) == true
         genre_count[genre_name] += 1
       else
-        genre_count[genre_name] = 1 
+        genre_count[genre_name] = 1
       end
     end
+    return genre_count
   end
 
 end
