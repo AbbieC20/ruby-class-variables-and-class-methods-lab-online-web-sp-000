@@ -7,9 +7,7 @@ class Song
   @@artist_count = 0
 
   def initialize
-    @name = name
-    @artist = artist
-    @genre = genre
+    attr_accessor :name, :artist, :genre
   end
 
   def self.count
